@@ -14,6 +14,7 @@ Site: primeNG
       exercicios (b) Linguagem (/b) avançado
       programador BR
       to do list
+      https://www.typescriptlang.org/
 ____________________________________________
 
 IDE: Eclipse, IntelliJ, Visual Code
@@ -22,6 +23,16 @@ Baixar Nodes.js
 ___________________________________________
 instaladores npm
 ___________________________________________
-Git bash/ Cmder - Cmd para instalar
+Git bash/ Cmder - cmd para instalar
 ___________________________________________
+Comando para instalar TypeScript
+- npm install -g typescript  # -g global
+___________________________________________
+Configurar Node.js no windows
+- tsc -v # para ver a a versão e virificar se está instalado
+___________________________________________
+ECMAScript
+ES 2015 # por exemplo
+___________________________________________
+
 
