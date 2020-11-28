@@ -1,0 +1,20 @@
+______________TypeScript______________
+Serve para Organizar seu código
+
+Ganha em organização de fonte
+____________________________________________
+Site: primeNG
+      tutorial ajax
+      python DOC
+      codingame
+      como melhorar sua lógica
+      estrutura de dados**
+      cardinalidade sql
+      Livro: Lógica de progamação
+      exercicios (b) Linguagem (/b) avançado
+      programador BR
+____________________________________________
+
+IDE: Eclipse
+
+Baixar Nodes.js - Compilador
