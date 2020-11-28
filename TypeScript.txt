@@ -13,8 +13,15 @@ Site: primeNG
       Livro: Lógica de progamação
       exercicios (b) Linguagem (/b) avançado
       programador BR
+      to do list
 ____________________________________________
 
-IDE: Eclipse
+IDE: Eclipse, IntelliJ, Visual Code
+___________________________________________
+Baixar Nodes.js
+___________________________________________
+instaladores npm
+___________________________________________
+Git bash/ Cmder - Cmd para instalar
+___________________________________________
 
-Baixar Nodes.js - Compilador
