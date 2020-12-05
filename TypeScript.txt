@@ -56,5 +56,8 @@ abrir git bash e escrever
 tsc (nome do arquivo TypeScript no qual será convertido)
 exemplo: tsc index.ts
 
+para criar Jason
+exemplo: tsc --init
+
 **Escalabilidade
 
