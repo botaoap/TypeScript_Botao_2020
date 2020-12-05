@@ -34,5 +34,20 @@ ___________________________________________
 ECMAScript
 ES 2015 # por exemplo
 ___________________________________________
+05/12/2020
 
+abrir git bash e escrever 
+
+node --version
+
+npm --version
+
+npm install -g typescript
+
+npx tsc
+
+-- Abrir windows + pause break
+Variaveis de Ambiente
+Path
+colocar C:\Users\69146\AppData\Roaming\npm\tsc --> achar esse caminho no Git Bash
 
