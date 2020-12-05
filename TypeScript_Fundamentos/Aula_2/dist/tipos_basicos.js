@@ -23,8 +23,18 @@ var meuArray = [8, 6, 7, 9];
 for (var i in notasAlunos) {
     console.log(i);
 }
-// valores - of
+// valores - of // pegar o valor de dentro da variavel
 for (var _i = 0, notasAlunos_1 = notasAlunos; _i < notasAlunos_1.length; _i++) {
     var notaAluno = notasAlunos_1[_i];
     console.log(notaAluno);
 }
+// Enum - novo no typescritp
+var Cor;
+(function (Cor) {
+    Cor[Cor["Verde"]   = 0] = "Verde";
+    Cor[Cor["Amarelo"] = 1] = "Amarelo";
+    Cor[Cor["Azul"]    = 2] = "Azul";
+    Cor[Cor["Branco"]  = 3] = "Branco";
+})(Cor || (Cor = {})); // Módulo do JavaScript
+;
+var corFundo = Cor.Verde;

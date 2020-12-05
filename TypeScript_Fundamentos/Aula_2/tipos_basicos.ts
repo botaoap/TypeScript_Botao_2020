@@ -35,3 +35,7 @@ for (let i in notasAlunos){
 for (let notaAluno of notasAlunos){
     console.log(notaAluno);
 }
+
+// Enum - novo no typescritp
+enum Cor {Verde, Amarelo, Azul, Branco};
+let corFundo: Cor = Cor.Verde;
