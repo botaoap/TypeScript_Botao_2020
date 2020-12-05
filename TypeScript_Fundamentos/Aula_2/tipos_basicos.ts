@@ -21,8 +21,17 @@ alert("Endereço: " + logradouro + ", " + numero + ". " + cidade + " - " + estad
 alert(`Endereço: ${logradouro}, ${numero}. ${cidade} - ${estado}`); // Interpolação
 
 // arrays
-let notas: number[] = [8, 6, 7, 9];
+let notasAlunos: number[] = [8, 6, 7, 9];
 
 // pode ser declarado com <> operador diamante, onde terá o mesmo efeito
 let meuArray: Array<number> = [8, 6, 7, 9];
 
+// índices - in
+for (let i in notasAlunos){
+    console.log(i);
+}
+
+// valores - of // pegar o valor de dentro da variavel
+for (let notaAluno of notasAlunos){
+    console.log(notaAluno);
+}
