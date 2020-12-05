@@ -59,8 +59,10 @@ exemplo: tsc index.ts
 para criar Jason
 exemplo: tsc --init
 
-para compilar tudo com o destino
+para compilar tudo com o destino do Json
 exemplo: tsc
 
 **Escalabilidade
+___________________________________________
+
 
