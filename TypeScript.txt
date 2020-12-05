@@ -50,4 +50,11 @@ npx tsc
 Variaveis de Ambiente
 Path
 colocar C:\Users\69146\AppData\Roaming\npm\tsc --> achar esse caminho no Git Bash
+___________________________________________
+Transpilação
+abrir git bash e escrever
+tsc (nome do arquivo TypeScript no qual será convertido)
+exemplo: tsc index.ts
+
+**Escalabilidade
 
