@@ -15,3 +15,7 @@ var cidade = "Blumenau";
 var estado = "SC";
 alert("Endereço: " + logradouro + ", " + numero + ". " + cidade + " - " + estado);
 alert("Endere\u00E7o: " + logradouro + ", " + numero + ". " + cidade + " - " + estado); // Interpolação
+// arrays
+var notas = [8, 6, 7, 9];
+// pode ser declarado com <> operador diamante, onde terá o mesmo efeito
+var meuArray = [8, 6, 7, 9];

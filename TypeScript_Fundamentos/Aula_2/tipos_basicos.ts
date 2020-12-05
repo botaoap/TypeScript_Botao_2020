@@ -20,3 +20,9 @@ let estado: string = "SC";
 alert("Endereço: " + logradouro + ", " + numero + ". " + cidade + " - " + estado);
 alert(`Endereço: ${logradouro}, ${numero}. ${cidade} - ${estado}`); // Interpolação
 
+// arrays
+let notas: number[] = [8, 6, 7, 9];
+
+// pode ser declarado com <> operador diamante, onde terá o mesmo efeito
+let meuArray: Array<number> = [8, 6, 7, 9];
+
