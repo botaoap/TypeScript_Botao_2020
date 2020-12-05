@@ -59,5 +59,8 @@ exemplo: tsc index.ts
 para criar Jason
 exemplo: tsc --init
 
+para compilar tudo com o destino
+exemplo: tsc
+
 **Escalabilidade
 
