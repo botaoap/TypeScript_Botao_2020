@@ -30,14 +30,37 @@ export class AppComponent {
     // ____ // 
     // ↓↓ Usando o contrutor para preencher ↓↓
     this.todos.push(new Todo(1, 'Passear com o charro', false));
-    this.todos.push(new Todo(2, 'Ir ao cupermercado', true));
+    this.todos.push(new Todo(2, 'Ir ao supermercado', true));
     this.todos.push(new Todo(3, 'Cortar o cabelo', false));
 
   }
 
+  /*
   alterarTexto() {
 
     this.title = 'Texto alterado'
     this.nome = 'Gabriel Botão'
+  }
+  */
+
+  // para remover um intem é necessário fazer um splice
+  // entao vamos receber o indice do item de todo
+  remove(todo : Todo) {
+    const index = this.todos.indexOf(todo);
+
+    if (index !== 1) {
+      //verifica se A TAREFA(todo) esta na lista, se for !== 1 está na lista, ai pode remover
+      this.todos.splice(index, 1);// pega o item que vai ser removido e diz quantos itens precisa remover
+
+    }
+  }
+
+  markAsDone() {
+
+
+  }
+
+  markAsUndone() {
+
   }
 }
