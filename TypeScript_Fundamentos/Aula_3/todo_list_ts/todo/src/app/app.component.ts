@@ -5,6 +5,21 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'todo';
+  public todos : any[]  = [];
+  public title : String = 'Minhas tarefas';
+
+  constructor() { // contrutor executa 
+
+    this.todos.push('passear com cachorro');
+    this.todos.push('ir ao supermercado');
+    this.todos.push('cortar cabelo');
+
+  }
+
+  alterarTexto() {
+
+    this.title = 'Texto alterado'
+  }
 }
