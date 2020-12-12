@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Todo } from './models/todo.model';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { validate } from 'json-schema';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +13,23 @@ export class AppComponent {
   public todos : Todo[]  = [];
   public title : String = 'Minhas tarefas';
   public nome : String = 'Gabriel'
+  public form : FormGroup;
 
+  constructor(private fb : FormBuilder) {
+
+    this.form = this.fb.group({
+      title : ['', Validators.compose([
+        Validators.minLength(3),
+        Validators.maxLength(60),
+        Validators.required
+      ])]
+    })
+
+  }
+  /*
   constructor() { // contrutor: primeiro método para executar
 
-    /*
+    
     this.todos.push('passear com cachorro');
     this.todos.push('ir ao supermercado');
     this.todos.push('cortar cabelo');
@@ -22,7 +37,7 @@ export class AppComponent {
     this.todos.push(1999);
     this.todos.push([{message : 'teste'}]);
     this.todos.push(new Date());
-    */
+    
 
     // pode ser feito passando o objeto como a linha  abaixo,
     // mas iremos usar o construtor da classe
@@ -34,6 +49,7 @@ export class AppComponent {
     this.todos.push(new Todo(3, 'Cortar o cabelo', false));
 
   }
+  /*
 
   /*
   alterarTexto() {
@@ -44,23 +60,31 @@ export class AppComponent {
   */
 
   // para remover um intem é necessário fazer um splice
+  // *SPLICE é uma função do JavaScript*
   // entao vamos receber o indice do item de todo
   remove(todo : Todo) {
+    
     const index = this.todos.indexOf(todo);
-
-    if (index !== 1) {
+    //console.log(index);
+    
+    if (index !== -1) {
       //verifica se A TAREFA(todo) esta na lista, se for !== 1 está na lista, ai pode remover
       this.todos.splice(index, 1);// pega o item que vai ser removido e diz quantos itens precisa remover
 
     }
   }
 
-  markAsDone() {
-
+  markAsDone(todo : Todo) { //parametro com tipagem
+    
+    todo.done = true;
 
   }
 
-  markAsUndone() {
+  markAsUndone(todo : Todo) { //parametro com tipagem
+
+    todo.done = false;
+
+    
 
   }
 }

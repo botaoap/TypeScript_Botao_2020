@@ -3,8 +3,8 @@
 <ul>
   <li *ngFor="let todo of todos">{{ todo.id }} - {{ todo.title }} - {{ todo.done }} |
 
-    <button *ngIf="todo.done">Refazer</button>
-    <button *ngIf="!todo.done">Concluir</button> |
+    <button *ngIf="todo.done" (click)="markAsUndone(todo)">Refazer</button>
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)">Concluir</button> |
     <button (click)="remove(todo)">Remover</button>
 
   </li>
@@ -12,5 +12,14 @@
   <!-- of é o valor do intem -->
   <!-- if é o indice(posição do item) -->
 </ul>
+
+<form [formGroup] = "form">
+  <fieldset>
+    <label>Tafera:</label>
+      <input type="text" placeholder="Titulo da tarefa" maxlength="60" formControlName="title">
+      <button>Adicionar</button>
+  </fieldset>
+  
+</form>
 
 <!--<button (click)="alterarTexto()">Alterar Título</button>-->
