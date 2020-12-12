@@ -20,10 +20,14 @@ export class AppComponent {
     this.form = this.fb.group({
       title : ['', Validators.compose([
         Validators.minLength(3),
-        Validators.maxLength(60),
+        Validators.maxLength(10),
         Validators.required
       ])]
-    })
+    });
+
+    this.todos.push(new Todo(1, 'Passear com o charro', false));
+    this.todos.push(new Todo(2, 'Ir ao supermercado', true));
+    this.todos.push(new Todo(3, 'Cortar o cabelo', false));
 
   }
   /*
@@ -77,12 +81,14 @@ export class AppComponent {
   markAsDone(todo : Todo) { //parametro com tipagem
     
     todo.done = true;
-
   }
 
   markAsUndone(todo : Todo) { //parametro com tipagem
 
     todo.done = false;
+  }
+
+  adicionar(adicionar : Todo) {
 
     
 
