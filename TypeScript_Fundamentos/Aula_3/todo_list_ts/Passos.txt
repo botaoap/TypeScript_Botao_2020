@@ -1,0 +1,13 @@
+14:07 12/12/2020
+Verificar com codes no terminal Bash
+
+node --version # verifica se tem o Node.JS instalado
+
+npm --version # verificar se tem o Gerenciador de Pacotes(npm) instalado
+________________________________________________________________________
+Instalar o Angular
+
+npm install -g @angular/cli
+
+ng --version # mostra a versao do Angular
+________________________________________________________________________
