@@ -16,11 +16,14 @@
 <form [formGroup] = "form">
   <fieldset>
     <label>Tafera: </label>
-      <input type="text" placeholder="Titulo da tarefa" maxlength="60" formControlName="title">
+      <input type="text" 
+             placeholder="Titulo da tarefa" 
+             maxlength="60" 
+             formControlName="title">
       <small *ngIf = "form.controls.title.invalid && !form.controls.title.pristine"> Mínino 3 caracteres e Máximo 10 </small>
       <!--Pristine é um formulário que "não foi tocado"-->
       <!---->
-      <button [disabled] = "form.invalid">Adicionar</button>
+      <button [disabled] = "form.invalid" (click)="adicionar()">Adicionar</button>
   </fieldset>
   
 </form>
