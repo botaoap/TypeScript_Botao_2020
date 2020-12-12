@@ -10,4 +10,32 @@ Instalar o Angular
 npm install -g @angular/cli
 
 ng --version # mostra a versao do Angular
+
+ng new "todo" # cria uma aplicação e "todo" é o nome da aplicação
+- y
+- y
+- Escolhas de FramesWorks ( escolhemos CSS normal)
+________________________________________________________________________
+Estrutura do Projeto
+
+--de baixo pra cima
+- tslint - dicas do TypeScript (tslint configurar"google")
+- tsconfig.json, configurações para todo TypeScript, pode ser feito a configuração de uma
+target(pasta compilada java), versao jsque será gerado, versões.
+- README - como executar o projeto
+- package.json - dependencias do projeto
+- package_lock.json - dependencias locais, travando para essa maquina
+- angular.jason - configuração do projeto
+- pasta scr - com o codigo fonte
+- pasta e2e - com teste unitarios
+________________________________________________________________________
+-- dentro de  scr - com o codigo fonte
+- tslint - dicas do typeScript
+- tsconfig e tsconfig.espec, configurações da aplicação e configurações de teste, tudo que tem .espec é referente a teste
+- polyfills.ts, carregar os modulos da aplicação um topico mais avançado
+- main.ts o arquivo principal, todo a vez que a aplicacao subir ele é chamado
+- browserlist, arquivo de compatibilidades para os css's da aplicação para browser antigos
+- enviroments - variaveis, tipo desenvolvimento, produção.
+- assest, pasta com coisas extras, css, imagens
+- app , com a nosssa aplicacao.
 ________________________________________________________________________
